@@ -15,8 +15,11 @@
 	<remove-node path="/api/package[@name='io.rong.imlib.statistics']/class[@name='StatisticsStore']" />
 	<remove-node path="/api/package[@name='io.rong.imkit.widget']/class[@name='RCViewFlow']" />
 	<remove-node path="/api/package[@name='io.rong.imlib']/class[@name='RongIMClient.GetNotificationQuietHoursCallback']" />
-  
-	<attr path="/api/package[@name='io.rong.imkit.fragment']/class[@name='SubConversationListFragment']/method[@name='initFragment' and count(parameter)=1 and parameter[1][@type='android.net.Uri']]" name="visibility">protected</attr>
+  <remove-node path="/api/package[@name='io.rong.imageloader']" />
+  <remove-node path="/api/package[@name='io.rong.eventbus']" />
+  <remove-node path="/api/package[@name='io.rong.message']/class[@name='RecallNotificationMessage']" />
+
+  <attr path="/api/package[@name='io.rong.imkit.fragment']/class[@name='SubConversationListFragment']/method[@name='initFragment' and count(parameter)=1 and parameter[1][@type='android.net.Uri']]" name="visibility">protected</attr>
 	<attr path="/api/package[@name='io.rong.imkit.fragment']/interface[@name='UriFragment.IActionBarHandler']" name="visibility">public</attr>
 	<attr path="/api/package[@name='io.rong.imkit.model']/class[@name='Event.BaseConversationEvent']" name="visibility">public</attr>
 	<attr path="/api/package[@name='io.rong.imkit.widget.adapter']/class[@name='ConversationAddMemberAdapter']/method[@name='bindView']/parameter[@name='p2']" name="type">Java.Lang.Object</attr>
